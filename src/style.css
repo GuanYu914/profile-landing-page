@@ -1,0 +1,225 @@
+@import url('/node_modules/normalize.css/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
+
+body {
+  font-size: 16px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+body > section ~ section {
+  margin-top: 10rem;
+}
+
+.profile {
+  margin-top: 2rem;
+}
+
+.profile__avatar {
+  margin: 0 auto 1rem;
+  background-color: #c4c4c4;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+
+.profile__quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__quote__icon {
+  margin-right: 0.6rem;
+  width: 0.6rem;
+  height: 1.8rem;
+  background-color: #c4c4c4;
+}
+
+.profile__quote__text {
+  font-size: 1.2rem;
+}
+
+.profile__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__location__icon {
+  margin-right: 0.4rem;
+}
+
+.profile__location__icon > i {
+  font-size: 1.4rem;
+  color: #000;
+}
+
+.profile__location__text {
+  font-size: 1rem;
+}
+
+.profile__links {
+  width: fit-content;
+  height: fit-content;
+  margin: 2rem auto 0;
+}
+
+.profile__links > div ~ div {
+  margin-top: 0.6rem;
+}
+
+.profile__links__email {
+  justify-self: flex-start;
+}
+
+.profile__links__github > i,
+.profile__links__email > i {
+  font-size: 1.4rem;
+  color: #000;
+  margin-right: 0.4rem;
+}
+
+.profile__links__github__text,
+.profile__links__email__text {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.background {
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.background__title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.background__timeline__subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* card design */
+.background__timeline__achievements--white {
+  width: 90vw;
+  box-sizing: border-box;
+  height: fit-content;
+  padding: 0.8rem 0.8rem;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem;
+}
+
+.background__timeline__achievements__text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* .skills {
+  
+} */
+
+.skills__title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.skills__caption {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.skills__slider {
+  display: flex;
+  width: 90vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin: 0 auto;
+}
+
+.skills__slider__skill {
+  margin-right: 0.6rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+.skills__slider__skill__icon {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+}
+
+.skills__slider__skill__name {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* .side-projects {
+
+} */
+
+.side-projects__title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.side-projects__frame {
+  margin: 0 auto;
+  position: relative;
+  width: 90vw;
+  height: 12rem;
+  background-color: #c4c4c4;
+  border-radius: 0.5rem;
+  margin-bottom: 4.8rem;
+  box-shadow:  0px 8px 24px rgba(149, 157, 165, 0.2); 
+}
+
+.side-projects__frame__name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  position: absolute;
+  color: white;
+  background-color: #7db0d1;
+  width: 90vw;
+  border-radius: 0 0 0.5rem 0.5rem;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 0.4rem 0.8rem;
+  bottom: 0;
+}
+
+footer {
+  background-color: #c4c4c4;
+}
+
+.footer__links {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0.8rem 0.4rem;
+}
+
+.footer__links__github > i,
+.footer__links__email > i{
+  font-size: 1.4rem;
+  color: #fff;
+  margin-right: 0.4rem;
+}
+
+.footer__copy-right {
+  text-align: center;
+  color: white;
+  margin-top: 0.2rem;
+  margin-bottom: 0;
+  padding-bottom: 0.8rem;
+}
