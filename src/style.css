@@ -1,5 +1,11 @@
+/* 使用 normalize */
 @import url('/node_modules/normalize.css/normalize.css');
+/* 使用 google web font ( noto sans ) */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
+/* 引入自定義的 .css */
+@import url(/src/rwd.css);
+@import url(/src/font.css);
+@import url(/src/utils.css);
 
 body {
   font-size: 16px;
@@ -11,7 +17,8 @@ body > section ~ section {
 }
 
 .profile {
-  margin-top: 2rem;
+  width: 90vw;
+  margin: 2rem auto 0;
 }
 
 .profile__avatar {
@@ -22,40 +29,36 @@ body > section ~ section {
   border-radius: 50%;
 }
 
-.profile__quote {
+.profile__personal-info__name {
+  text-align: center;
+  margin: 0;
+}
+
+.profile__personal-info__quote {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.profile__quote__icon {
+.profile__personal-info__quote__icon {
   margin-right: 0.6rem;
   width: 0.6rem;
   height: 1.8rem;
   background-color: #c4c4c4;
 }
 
-.profile__quote__text {
-  font-size: 1.2rem;
-}
-
-.profile__location {
+.profile__personal-info__location {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.profile__location__icon {
+.profile__personal-info__location__icon {
   margin-right: 0.4rem;
 }
 
-.profile__location__icon > i {
-  font-size: 1.4rem;
+.profile__personal-info__location__icon > i {
   color: #000;
-}
-
-.profile__location__text {
-  font-size: 1rem;
 }
 
 .profile__links {
@@ -74,7 +77,6 @@ body > section ~ section {
 
 .profile__links__github > i,
 .profile__links__email > i {
-  font-size: 1.4rem;
   color: #000;
   margin-right: 0.4rem;
 }
@@ -83,7 +85,6 @@ body > section ~ section {
 .profile__links__email__text {
   text-decoration: none;
   color: #000;
-  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -95,13 +96,11 @@ body > section ~ section {
 }
 
 .background__title {
-  font-size: 2rem;
   font-weight: 700;
   text-align: center;
 }
 
 .background__timeline__subtitle {
-  font-size: 1.2rem;
   font-weight: 500;
   text-align: center;
 }
@@ -118,7 +117,6 @@ body > section ~ section {
 }
 
 .background__timeline__achievements__text {
-  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -127,13 +125,11 @@ body > section ~ section {
 } */
 
 .skills__title {
-  font-size: 2rem;
   font-weight: 700;
   text-align: center;
 }
 
 .skills__caption {
-  font-size: 1.2rem;
   font-weight: 500;
   text-align: center;
 }
@@ -153,14 +149,13 @@ body > section ~ section {
 }
 
 .skills__slider__skill__icon {
-  width: 4.8rem;
-  height: 4.8rem;
+  width: 5.4rem;
+  height: 5.4rem;
   border-radius: 50%;
   background-color: #c4c4c4;
 }
 
 .skills__slider__skill__name {
-  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -169,7 +164,6 @@ body > section ~ section {
 } */
 
 .side-projects__title {
-  font-size: 2rem;
   font-weight: 700;
   text-align: center;
 }
@@ -186,7 +180,6 @@ body > section ~ section {
 }
 
 .side-projects__frame__name {
-  font-size: 1.2rem;
   font-weight: 500;
   position: absolute;
   color: white;
@@ -200,6 +193,7 @@ body > section ~ section {
 }
 
 footer {
+  margin-top: 6rem;
   background-color: #c4c4c4;
 }
 
@@ -211,7 +205,6 @@ footer {
 
 .footer__links__github > i,
 .footer__links__email > i{
-  font-size: 1.4rem;
   color: #fff;
   margin-right: 0.4rem;
 }
