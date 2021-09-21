@@ -204,38 +204,22 @@
   }
 
   /* side-projects */
-  /* 使用 flex 排版，讓每個 side-projects frame 可以兩兩並排顯示 */
-  /* 控制 side-project 的 frame 寬度 */
-  .side-projects__frame,
+  /* 控制 side-project 的 frame 寬度 & 高度*/
+  /* 每個寬高比保持 16:9 */
+  .side-projects__frame {
+    margin: 0 auto 2rem !important;
+    width: 46rem !important;
+    height: calc(46rem * 9 / 16) !important;
+  }
+  
   .side-projects__frame__name {
-    width: 20rem !important; 
+    width: 46rem !important; 
   }
 
   .side-projects {
     max-width: 48rem;
-    display: flex;
-    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    justify-content: space-around;
-  }
-
-  .side-projects__title  {
-    width: 100%;
-  }
-
-  .side-projects__frame {
-    margin: 0 !important;
-  }
-
-  /* n+4 由來
-  frame 從 3 開始，以此往後每一個都套用規則，但因為 .side-project 
-  底下還有一個 p 標籤，所以加上它的偏移量，故 n + 3 + 1 等於 
-  n + 4
-  */
-  .side-projects >
-  .side-projects__frame:nth-child(n+4) {
-    margin-top: 2rem !important;
   }
 }
 
