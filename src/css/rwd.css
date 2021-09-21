@@ -61,7 +61,6 @@
   }
   
   .background-768px__title {
-    font-weight: 700;
     text-align: center;
   }
 
@@ -85,7 +84,6 @@
   .background-768px__timeline__subtitle {
     position: absolute;
     margin: 0; 
-    font-weight: 500;
   }
 
   .background-768px__timeline__time-stamp {
@@ -191,10 +189,6 @@
     left: -3.8rem;
     transform: translateY(-50%);
     z-index: 1000;
-  }
-
-  .background-768px__timeline__achievements__text {
-    font-weight: 500;
   }
 
   /* skills */
