@@ -3,12 +3,12 @@
 /* 使用 google web font ( noto sans ) */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
 /* 引入自定義的 .css */
-@import url(/src/rwd.css);
-@import url(/src/font.css);
-@import url(/src/utils.css);
-@import url(/src/color.css);
-@import url(/src/button.css);
-@import url(/src/badge.css);
+@import url(/src/css/rwd.css);
+@import url(/src/css/font.css);
+@import url(/src/css/utils.css);
+@import url(/src/css/color.css);
+@import url(/src/css/button.css);
+@import url(/src/css/badge.css);
 
 body {
   font-size: 16px;
