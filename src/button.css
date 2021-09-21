@@ -1,0 +1,9 @@
+.btn-rounded {
+  border: none;
+  border-radius: 2rem;
+  color: #000;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  box-shadow:  0px 8px 24px rgba(149, 157, 165, 0.2); 
+}
