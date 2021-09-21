@@ -1,7 +1,5 @@
 /* 使用 normalize */
 @import url('/node_modules/normalize.css/normalize.css');
-/* 使用 google web font ( noto sans ) */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
 /* 引入自定義的 .css */
 @import url(/src/css/rwd.css);
 @import url(/src/css/font.css);
@@ -96,7 +94,6 @@ body > section ~ section {
 .profile__links__email__text {
   text-decoration: none;
   color: #000;
-  font-weight: 500;
 }
 
 .background {
@@ -107,12 +104,10 @@ body > section ~ section {
 }
 
 .background__title {
-  font-weight: 700;
   text-align: center;
 }
 
 .background__timeline__subtitle {
-  font-weight: 500;
   text-align: center;
 }
 
@@ -127,21 +122,15 @@ body > section ~ section {
   border-radius: 1rem;
 }
 
-.background__timeline__achievements__text {
-  font-weight: 500;
-}
-
 /* .skills {
   
 } */
 
 .skills__title {
-  font-weight: 700;
   text-align: center;
 }
 
 .skills__caption {
-  font-weight: 500;
   text-align: center;
 }
 
@@ -175,7 +164,6 @@ body > section ~ section {
 } */
 
 .side-projects__title {
-  font-weight: 700;
   text-align: center;
 }
 
@@ -207,7 +195,6 @@ body > section ~ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 500;
   position: absolute;
   color: white;
   background-color: #7db0d1;
