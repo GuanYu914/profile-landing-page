@@ -1,6 +1,21 @@
 /* 定義不同裝置寬度底下，對應的 .fs 屬性 */
 /* 用於動態調整不同螢幕寬度的文字大小 */
 
+/* 使用 google web font ( noto sans ) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
+
+.fw-light {
+  font-weight: 400 !important;
+}
+
+.fw-normal {
+  font-weight: 500 !important;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+
 @media screen and (min-width: 320px){
   .fs-1 {
     font-size: 3.2rem !important;
