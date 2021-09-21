@@ -1,0 +1,46 @@
+/* foreground color  */
+.color-primary {
+  color: #F57244 !important;
+}
+
+.color-primary2 {
+  color: #CEBA90 !important;
+}
+
+.color-secondary {
+  color: #AFADAD !important;
+}
+
+.color-secondary2 {
+  color: #1F1E1C !important;
+}
+
+.color-secondary3 {
+  color: #FFFFFF !important;
+}
+
+/* background color */
+.bg-color-primary {
+  background-color: #F57244 !important;
+}
+
+.bg-color-primary2 {
+  background-color: #CEBA90 !important;
+}
+
+.bg-color-secondary {
+  background-color: #AFADAD !important;
+}
+
+.bg-color-secondary2 {
+  background-color: #1F1E1C !important;
+}
+
+.bg-color-secondary3 {
+  background-color: #FFFFFF !important;
+}
+
+/* border color */
+.border-color-primary {
+  border-color: #F57244 !important;
+}
