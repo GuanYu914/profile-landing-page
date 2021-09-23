@@ -218,7 +218,7 @@
 }
 
 /* 控制要不要顯示完整 timeline 區塊 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .background {
     display: block;
   }
