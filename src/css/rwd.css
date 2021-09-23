@@ -261,3 +261,16 @@
     display: none !important;
   }
 }
+
+/* 根據有無 highlight block，控制 skills 的標題顏色 */
+@media screen and (min-width: 768px) {
+  .skills__title {
+    color: #1F1E1C;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .skills__title {
+    color: #FFFFFF;
+  }
+}
