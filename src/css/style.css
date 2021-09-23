@@ -159,12 +159,19 @@ body > section ~ section {
   text-align: center;
 }
 
-/* .side-projects {
-
-} */
+.side-projects {
+  position: relative;
+}
 
 .side-projects__title {
   text-align: center;
+}
+
+.side-projects__illustration-3q {
+  position: absolute;
+  z-index: 1000;
+  top: -10.6rem;
+  right: 0.8rem;
 }
 
 .side-projects__frame {
