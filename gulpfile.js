@@ -5,10 +5,11 @@ const gulp = require('gulp')
 const postcss = require('gulp-postcss')
 const sourcemaps = require('gulp-sourcemaps')
 const autoprefixer = require('autoprefixer')
+const { watch } = require('gulp')
 
 // 使用 autoprefixer 產生 post css 
 // 生成 sourcemap 對應到原始 css code
-const Autoprefixer = async function () {
+const Autoprefixer = function () {
   gulp.src('./src/css/*.css')
     .pipe(sourcemaps.init())
     .pipe(postcss([autoprefixer()]))
@@ -17,5 +18,26 @@ const Autoprefixer = async function () {
   console.log('Autoprefixer completed.');
 }
 
+// 如果特定目錄有修改、新增、移除 css ，則呼叫 Autoprefixer
+const watch_css = function () {
+  const watcher = watch(['src/css/*.css']);
+
+  watcher.on('change', function(path, stats) {
+    console.log(`File ${path} was changed`);
+    Autoprefixer();
+  });
+
+  watcher.on('add', function(path, stats) {
+    console.log(`File ${path} was added`);
+    Autoprefixer();
+  });
+
+  watcher.on('unlink', function(path, stats) {
+    console.log(`File ${path} was removed`);
+    Autoprefixer();
+  });
+}
+
 // 發包任務
-exports.default = gulp.series(Autoprefixer);
+exports.default = Autoprefixer;
+exports.watch_css = watch_css;
