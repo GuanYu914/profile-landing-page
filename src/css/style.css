@@ -290,6 +290,11 @@ footer {
   padding: 0.8rem 0.4rem;
 }
 
+.footer__links__github > a,
+.footer__links__email > a {
+  text-decoration: none;
+}
+
 .footer__links__github {
   margin-right: 0.6rem;
 }
