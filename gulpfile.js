@@ -1,43 +1,31 @@
-// 透過 autoprefixer 達到 post css ，提升 css 在不同瀏覽器的兼容性
-
 // 引入需要的模組
-const gulp = require('gulp')
-const postcss = require('gulp-postcss')
-const sourcemaps = require('gulp-sourcemaps')
-const autoprefixer = require('autoprefixer')
-const { watch } = require('gulp')
+const { gulp, task, series, src, dest, watch } = require('gulp')
+const autoprefixer = require('autoprefixer');
+const postcss = require('gulp-postcss');
+const sourcemaps = require('gulp-sourcemaps');
+const cssimport = require('gulp-cssimport');
+const cleancss = require('gulp-clean-css');
+const concat = require('gulp-concat');
 
-// 使用 autoprefixer 產生 post css 
-// 生成 sourcemap 對應到原始 css code
-const Autoprefixer = function () {
-  gulp.src('./src/css/*.css')
+// 打包所有 CSS 程式碼，並使用 autoprefixer 提升 css 在不同瀏覽器的兼容性
+function BundleCSS(cb) {
+  src('src/css/style.css')
     .pipe(sourcemaps.init())
+    .pipe(cssimport({}))
     .pipe(postcss([autoprefixer()]))
-    .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('./public/css'));
-  console.log('Autoprefixer completed.');
+    .pipe(cleancss({}))
+    .pipe(concat('bundle.css'))
+    .pipe(sourcemaps.write('.'))
+    .pipe(dest('public'))
+  cb()
 }
 
-// 如果特定目錄有修改、新增、移除 css ，則呼叫 Autoprefixer
-const watch_css = function () {
-  const watcher = watch(['src/css/*.css']);
-
-  watcher.on('change', function(path, stats) {
-    console.log(`File ${path} was changed`);
-    Autoprefixer();
-  });
-
-  watcher.on('add', function(path, stats) {
-    console.log(`File ${path} was added`);
-    Autoprefixer();
-  });
-
-  watcher.on('unlink', function(path, stats) {
-    console.log(`File ${path} was removed`);
-    Autoprefixer();
-  });
+// 如果特定目錄有修改、新增、移除 css ，則呼叫 BundleCSS
+function WatchCSS () {
+  watch('src/css/*.css', BundleCSS);
 }
 
 // 發包任務
-exports.default = Autoprefixer;
-exports.watch_css = watch_css;
+exports.default = BundleCSS;
+exports.build = BundleCSS
+exports.dev = WatchCSS
