@@ -1,12 +1,12 @@
 /* 使用 normalize */
-@import url('/node_modules/normalize.css/normalize.css');
+@import url('../..//node_modules/normalize.css/normalize.css');
 /* 引入自定義的 .css */
-@import url(/src/css/rwd.css);
-@import url(/src/css/font.css);
-@import url(/src/css/utils.css);
-@import url(/src/css/color.css);
-@import url(/src/css/button.css);
-@import url(/src/css/badge.css);
+@import url(./rwd.css);
+@import url(./font.css);
+@import url(./utils.css);
+@import url(./color.css);
+@import url(./button.css);
+@import url(./badge.css);
 
 body {
   font-size: 16px;
@@ -32,7 +32,7 @@ body > section ~ section {
 
 .profile__avatar {
   margin: 0 auto 1rem;
-  background-image: url('../../public/img/avatar.jpg');
+  background-image: url('./img/avatar.jpg');
   background-size: cover;
   width: 8rem;
   height: 8rem;
@@ -159,42 +159,42 @@ body > section ~ section {
 
 /* add skill icons */
 div.skills__slider__skill:nth-child(1) div.skills__slider__skill__icon {
-  background-image: url("../../public/img/css3.jpg");
+  background-image: url("./img/css3.jpg");
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 div.skills__slider__skill:nth-child(2) div.skills__slider__skill__icon {
-  background-image: url("../../public/img/html5.jpg");
+  background-image: url("./img/html5.jpg");
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 div.skills__slider__skill:nth-child(3) div.skills__slider__skill__icon {
-  background-image: url("../../public/img/js.jpg");
+  background-image: url("./img/js.jpg");
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 div.skills__slider__skill:nth-child(4) div.skills__slider__skill__icon {
-  background-image: url("../../public/img/jquery.jpg");
+  background-image: url("./img/jquery.jpg");
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 div.skills__slider__skill:nth-child(5) div.skills__slider__skill__icon {
-  background-image: url("../../public/img/bootstrap.jpg");
+  background-image: url("./img/bootstrap.jpg");
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 div.skills__slider__skill:nth-child(6) div.skills__slider__skill__icon {
-  background-image: url("../../public/img/webpack.jpg");
+  background-image: url("./img/webpack.jpg");
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
@@ -202,7 +202,7 @@ div.skills__slider__skill:nth-child(6) div.skills__slider__skill__icon {
 
 
 div.skills__slider__skill:nth-child(7) div.skills__slider__skill__icon {
-  background-image: url("../../public/img/react.jpg");
+  background-image: url("./img/react.jpg");
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
@@ -237,17 +237,17 @@ div.skills__slider__skill:nth-child(7) div.skills__slider__skill__icon {
 
 /* add project covers */
 section.side-projects div.side-projects__frame:nth-child(3) {
-  background-image: url('../../public/img/clothing-ec-min.jpg');
+  background-image: url('./img/clothing-ec-min.jpg');
   background-size: cover;
 }
 
 section.side-projects div.side-projects__frame:nth-child(4) {
-  background-image: url('../../public/img/todo-manager-min.jpg');
+  background-image: url('./img/todo-manager-min.jpg');
   background-size: cover;
 }
 
 section.side-projects div.side-projects__frame:nth-child(5) {
-  background-image: url('../../public/img/uiux-min.jpg');
+  background-image: url('./img/uiux-min.jpg');
   background-size: cover;
 }
 
