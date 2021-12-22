@@ -75,7 +75,6 @@
     width: 0.6rem;
     height: 70rem; /* 先寫死 */
     border-radius: 1rem;
-    background-color: #c4c4c4;
     margin: 0 auto;
     z-index: -1;
     /* 水平居中 */
@@ -102,7 +101,6 @@
     box-sizing: border-box;
     height: fit-content;
     padding: 0.8rem 0.8rem;
-    background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 1rem;
   }
@@ -129,7 +127,6 @@
     /* 將 time stamp 置中在 indicator 上面 */
     width: 1.2rem;
     height: 1.2rem;
-    background-color: white;
     border: 0.4rem solid #c4c4c4;
     border-radius: 50%;
     top: 50%;
@@ -158,7 +155,6 @@
   .background-768px__timeline__time-stamp {
     width: 1.2rem;
     height: 1.2rem;
-    background-color: white;
     border: 0.4rem solid #c4c4c4;
     border-radius: 50%;
     top: 50%;
@@ -187,7 +183,6 @@
   .background-768px__timeline__time-stamp {
     width: 1.2rem;
     height: 1.2rem;
-    background-color: white;
     border: 0.4rem solid #c4c4c4;
     border-radius: 50%;
     top: 50%;
@@ -268,12 +263,6 @@
 }
 
 /* 根據有無 highlight block，控制 skills 的標題顏色 */
-@media screen and (min-width: 768px) {
-  .skills__title {
-    color: #1F1E1C;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .skills__title {
     color: #FFFFFF;

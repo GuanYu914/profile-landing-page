@@ -54,7 +54,6 @@ body > section ~ section {
   margin-right: 0.6rem;
   width: 0.6rem;
   height: 1.8rem;
-  background-color: #c4c4c4;
 }
 
 .profile__personal-info__location {
@@ -65,10 +64,6 @@ body > section ~ section {
 
 .profile__personal-info__location__icon {
   margin-right: 0.4rem;
-}
-
-.profile__personal-info__location__icon > i {
-  color: #000;
 }
 
 .profile__links {
@@ -83,14 +78,12 @@ body > section ~ section {
 
 .profile__links__github > i,
 .profile__links__email > i {
-  color: #000;
   margin-right: 0.4rem;
 }
 
 .profile__links__github__text,
 .profile__links__email__text {
   text-decoration: none;
-  color: #000;
   word-break: break-all;
 }
 
@@ -115,7 +108,6 @@ body > section ~ section {
   box-sizing: border-box;
   height: fit-content;
   padding: 0.8rem 0.8rem;
-  background-color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 1rem;
 }
@@ -150,7 +142,6 @@ body > section ~ section {
   width: 5.4rem;
   height: 5.4rem;
   border-radius: 50%;
-  background-color: #c4c4c4;
 }
 
 .skills__slider__skill__name {
@@ -229,7 +220,6 @@ div.skills__slider__skill:nth-child(7) div.skills__slider__skill__icon {
   /* 維持 16:9 比例 */
   width: 90vw;
   height: calc(90vw * 9 / 16);
-  background-color: #c4c4c4;
   border-radius: 0.5rem;
   margin-bottom: 4.8rem;
   box-shadow:  0px 8px 24px rgba(149, 157, 165, 0.2); 
@@ -268,8 +258,6 @@ section.side-projects div.side-projects__frame:nth-child(5) {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  color: white;
-  background-color: #7db0d1;
   /* 維持 16:9 比例 */
   width: 90vw;
   /* height: calc(90vw * 9 / 16); */
@@ -281,7 +269,6 @@ section.side-projects div.side-projects__frame:nth-child(5) {
 
 footer {
   margin-top: 6rem;
-  background-color: #c4c4c4;
 }
 
 .footer__links {
@@ -301,7 +288,6 @@ footer {
 
 .footer__desc {
   text-align: center;
-  color: white;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 0.8rem;
