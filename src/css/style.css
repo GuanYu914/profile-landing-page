@@ -14,14 +14,14 @@ body {
 }
 
 body > section ~ section {
-  margin-top: 10rem;
+  margin-top: 14rem;
 }
 
 .highlight {
   position: absolute;
   width: 100%;
   top: 28rem;
-  height: 62rem;
+  height: 90rem;
   z-index: -1;
 }
 
@@ -32,9 +32,10 @@ body > section ~ section {
 
 .profile__avatar {
   margin: 0 auto 1rem;
-  background-color: #c4c4c4;
-  width: 6rem;
-  height: 6rem;
+  background-image: url('../../public/img/avatar.jpg');
+  background-size: cover;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
 }
 
@@ -80,10 +81,6 @@ body > section ~ section {
   margin-top: 0.6rem;
 }
 
-.profile__links__email {
-  justify-self: flex-start;
-}
-
 .profile__links__github > i,
 .profile__links__email > i {
   color: #000;
@@ -94,6 +91,7 @@ body > section ~ section {
 .profile__links__email__text {
   text-decoration: none;
   color: #000;
+  word-break: break-all;
 }
 
 .background {
@@ -159,6 +157,57 @@ body > section ~ section {
   text-align: center;
 }
 
+/* add skill icons */
+div.skills__slider__skill:nth-child(1) div.skills__slider__skill__icon {
+  background-image: url("../../public/img/css3.jpg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div.skills__slider__skill:nth-child(2) div.skills__slider__skill__icon {
+  background-image: url("../../public/img/html5.jpg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div.skills__slider__skill:nth-child(3) div.skills__slider__skill__icon {
+  background-image: url("../../public/img/js.jpg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div.skills__slider__skill:nth-child(4) div.skills__slider__skill__icon {
+  background-image: url("../../public/img/jquery.jpg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div.skills__slider__skill:nth-child(5) div.skills__slider__skill__icon {
+  background-image: url("../../public/img/bootstrap.jpg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div.skills__slider__skill:nth-child(6) div.skills__slider__skill__icon {
+  background-image: url("../../public/img/webpack.jpg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+div.skills__slider__skill:nth-child(7) div.skills__slider__skill__icon {
+  background-image: url("../../public/img/react.jpg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .side-projects {
   position: relative;
 }
@@ -170,7 +219,7 @@ body > section ~ section {
 .side-projects__illustration-3q {
   position: absolute;
   z-index: 1000;
-  top: -10.6rem;
+  top: -12rem;
   right: 0.8rem;
 }
 
@@ -184,6 +233,22 @@ body > section ~ section {
   border-radius: 0.5rem;
   margin-bottom: 4.8rem;
   box-shadow:  0px 8px 24px rgba(149, 157, 165, 0.2); 
+}
+
+/* add project covers */
+section.side-projects div.side-projects__frame:nth-child(3) {
+  background-image: url('../../public/img/clothing-ec-min.jpg');
+  background-size: cover;
+}
+
+section.side-projects div.side-projects__frame:nth-child(4) {
+  background-image: url('../../public/img/todo-manager-min.jpg');
+  background-size: cover;
+}
+
+section.side-projects div.side-projects__frame:nth-child(5) {
+  background-image: url('../../public/img/uiux-min.jpg');
+  background-size: cover;
 }
 
 .side-projects__frame__tags {
@@ -225,16 +290,14 @@ footer {
   padding: 0.8rem 0.4rem;
 }
 
-.footer__links__github > i,
-.footer__links__email > i{
-  color: #fff;
-  margin-right: 0.4rem;
+.footer__links__github {
+  margin-right: 0.6rem;
 }
 
-.footer__copy-right {
+.footer__desc {
   text-align: center;
   color: white;
-  margin-top: 0.2rem;
+  margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 0.8rem;
 }
