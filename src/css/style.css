@@ -21,7 +21,7 @@ body > section ~ section {
   position: absolute;
   width: 100%;
   top: 28rem;
-  height: 90rem;
+  height: 84rem;
   z-index: -1;
 }
 

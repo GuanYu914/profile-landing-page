@@ -249,10 +249,16 @@
 }
 
 /* 控制 highlight 高度 */
-@media screen and (min-width: 568px){
+@media screen and (min-width: 320px) {
   .highlight {
     top: 30rem !important;
-    height: 98rem !important;
+    height: 84rem !important;
+  }
+}
+@media screen and (min-width: 568px){
+  .highlight {
+    top: 33rem !important;
+    height: 95rem !important;
   }
 }
 
