@@ -199,6 +199,13 @@ div.skills__slider__skill:nth-child(7) div.skills__slider__skill__icon {
   background-position: center;
 }
 
+div.skills__slider__skill:nth-child(8) div.skills__slider__skill__icon {
+  background-image: url("./img/redux.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .side-projects {
   position: relative;
 }
