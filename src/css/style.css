@@ -10,7 +10,8 @@
 
 body {
   font-size: 16px;
-  font-family: 'Noto Sans TC', sans-serif;
+  /* 順序有考慮到不同作業系統的中文字體兼容性 */
+  font-family: "Arial", "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "LiHei Pro","sans-serif";
 }
 
 body > section ~ section {
