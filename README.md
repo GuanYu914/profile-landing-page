@@ -13,3 +13,11 @@ npm run build
 npm run dev
 # 步驟 4. 切換到 public 資料夾，使用 live server 開啟 index.html，就可以看到畫面了
 ```
+## 優化載入速度
+1. 使用 webp 影像檔案，並考慮到兼容性，讓不支援 webp 的瀏覽器也可以讀取原本的影像檔
+
+手機端優化結果，透過 lighthouse 跑分  
+[Before](https://i.imgur.com/0q2IlFx.png) [After](https://i.imgur.com/jlQYj1p.png)  
+
+桌機端優化結果，透過 lighthouse 跑分  
+[Before](https://i.imgur.com/Tln6a5Y.png) [After](https://i.imgur.com/NgzLM0y.png)
